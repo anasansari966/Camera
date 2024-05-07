@@ -1,0 +1,37 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Capture Preview</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Capture Preview</h1>-->
+<!--    <img src="/static/capture.jpg" alt="Captured Image" style="width:50%">-->
+<!--    <form action="/retake" method="post" style="display: inline;">-->
+<!--        <button type="submit">Retake</button>-->
+<!--    </form>-->
+<!--    <form action="/save" method="post" style="display: inline;">-->
+<!--        <button type="submit">Submit</button>-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Preview</title>
+</head>
+<body>
+    <h1>Capture Preview</h1>
+    <img src="{{ filename }}" alt="Captured Image" style="width:50%">
+    <form action="/retake" method="post" style="display: inline;">
+        <button type="submit">Retake</button>
+    </form>
+    <form action="/save" method="post" style="display: inline;">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
